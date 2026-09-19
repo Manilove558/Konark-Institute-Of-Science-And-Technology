@@ -44,4 +44,11 @@ export const images: GalleryImage[] = [
     width: 4,
     height: 4 
   },
+   { 
+    title: 'Anime', 
+    detail: 'bright colors, warm hands', 
+    src: '/photos/anime6.jpg',
+    width: 4,
+    height: 5 
+  },
 ]
