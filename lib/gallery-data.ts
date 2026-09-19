@@ -12,7 +12,7 @@ export const images: GalleryImage[] = [
   { 
     title: 'Two of us', 
     detail: 'blue skies, pink sweaters', 
-    src: '/photos/anime1.jpg',
+    src: '/photos/Solasta.jpg',
     width: 7,
     height: 6 
   },
