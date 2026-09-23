@@ -1,6 +1,10 @@
 import { GoogleAnalytics } from '@next/third-parties/google'
 import type { Metadata, Viewport } from 'next'
+import localFont from 'next/font/local'
+import { Google_Sans } from 'next/font/google'
 import './globals.css'
+// i have aded
+const googleSans = Google_Sans({ subsets: ['latin'], variable: '--font-title' })
 
 export const metadata: Metadata = {
   title: "Konark Institute Of Science And Technology",
@@ -41,7 +45,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased">
+      <body className={`antialiased ${googleSans.variable}`}>
         {children}
         {process.env.NODE_ENV === 'production' && gaId && <GoogleAnalytics gaId={gaId} />}
       </body>
